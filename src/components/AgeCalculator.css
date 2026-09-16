@@ -1,0 +1,87 @@
+/* src/components/AgeCalculator.css */
+.age-calculator {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.age-calculator form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.age-calculator input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.error-message p {
+    color: red;
+    font-size: 16px;
+}
+
+.age-calculator button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.age-calculator button:hover {
+    background-color: #0056b3;
+}
+
+.age-results {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age-results p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: block;
+    color: #333;
+}
+
+.age-results .animated {
+    animation: fadeInOut 1.5s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+strong {
+    color: #007bff;
+    font-size: 1.1em;
+}
+
+.loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #007bff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

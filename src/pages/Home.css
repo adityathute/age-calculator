@@ -1,0 +1,30 @@
+/* src/pages/Home.css */
+.home {
+    padding: 1rem;
+}
+
+.calculator-nav {
+    margin-bottom: 1rem;
+}
+
+.calculator-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.calculator-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.calculator-nav a {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.calculator-nav a:hover {
+    background-color: #0056b3;
+}
